@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>flink-demo</artifactId>
+    <artifactId>flink-scala</artifactId>
 
     <properties>
         <encoding>UTF-8</encoding>
@@ -104,6 +104,12 @@
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-jdbc_2.12</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-elasticsearch7_2.11</artifactId>
             <version>${flink.version}</version>
         </dependency>
         <dependency>
@@ -233,11 +239,11 @@
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
             <version>6.5.1</version>
         </dependency>
+
     </dependencies>
 
     <build>
-        <finalName>flink-1.13.2</finalName>
-        <sourceDirectory>src/main/java</sourceDirectory>
+        <finalName>flink-1-13-2</finalName>
         <plugins>
             <!-- 编译插件 -->
             <plugin>
@@ -305,9 +311,16 @@
                                     </excludes>
                                 </filter>
                             </filters>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>com.google.code.findbugs:jsr305</exclude>
+                                    <exclude>org.slf4j:*</exclude>
+                                    <exclude>log4j:*</exclude>
+                                </excludes>
+                            </artifactSet>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass></mainClass>
+                                    <mainClass>task.dataStream.FlinkDataStream</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

@@ -110,7 +110,7 @@
     <commons-lang.version>2.5</commons-lang.version>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <scala.version>2.12</scala.version>
+    <scala.version>2.12.11</scala.version>
     <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 </project>

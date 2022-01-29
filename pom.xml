@@ -12,5 +12,8 @@
         <module>flink-demo</module>
         <module>flink-order</module>
         <module>flink-redis</module>
+        <module>flink-scala</module>
+        <module>flink-spark</module>
+        <module>flink-cdc</module>
     </modules>
 </project>
