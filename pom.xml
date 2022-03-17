@@ -15,5 +15,7 @@
         <module>flink-scala</module>
         <module>flink-spark</module>
         <module>flink-cdc</module>
+        <module>flink-realtime</module>
+        <module>flink-clickhouse</module>
     </modules>
 </project>

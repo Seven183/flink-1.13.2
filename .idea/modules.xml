@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/flink-1.13.2.iml" filepath="$PROJECT_DIR$/flink-1.13.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-cdc/flink-cdc.iml" filepath="$PROJECT_DIR$/flink-cdc/flink-cdc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-clickhouse/flink-clickhouse.iml" filepath="$PROJECT_DIR$/flink-clickhouse/flink-clickhouse.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-demo/flink-demo.iml" filepath="$PROJECT_DIR$/flink-demo/flink-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-order/flink-order.iml" filepath="$PROJECT_DIR$/flink-order/flink-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-realtime/flink-realtime.iml" filepath="$PROJECT_DIR$/flink-realtime/flink-realtime.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-redis/flink-redis.iml" filepath="$PROJECT_DIR$/flink-redis/flink-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-scala/flink-scala.iml" filepath="$PROJECT_DIR$/flink-scala/flink-scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-spark/flink-spark.iml" filepath="$PROJECT_DIR$/flink-spark/flink-spark.iml" />

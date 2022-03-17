@@ -5,9 +5,12 @@
     <file url="file://$PROJECT_DIR$/flink-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-realtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-realtime/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-scala/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-spark/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/t_order_mt.csv" charset="UTF-8" />
   </component>
 </project>

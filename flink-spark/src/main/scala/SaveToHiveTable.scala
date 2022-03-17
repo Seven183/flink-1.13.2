@@ -7,10 +7,11 @@ object SaveToHiveTable {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName(this.getClass.getSimpleName)
+      .master("local[*]")
       // 开启Hive支持
-      .enableHiveSupport()
+//      .enableHiveSupport()
       // 配置Hivewarehouse地址
-      .config("spark.sql.warehouse.dir","hdfs:///user/hive/warehouse")
+//      .config("spark.sql.warehouse.dir","hdfs:///user/hive/warehouse")
       .getOrCreate()
     // 读取文件
     val rawRdd = spark.sparkContext.textFile("file:///home/hadoop/data/spark/course.txt")

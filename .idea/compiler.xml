@@ -7,19 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink-demo" />
-        <module name="flink-spark" />
-        <module name="flink-scala" />
+        <module name="flink-clickhouse" />
+        <module name="flink-realtime" />
         <module name="flink-order" />
         <module name="flink-cdc" />
         <module name="flink-redis" />
+        <module name="flink-demo" />
+        <module name="flink-spark" />
+        <module name="flink-scala" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flink-1.13.2" target="1.5" />
       <module name="flink-cdc" target="8" />
+      <module name="flink-clickhouse" target="8" />
       <module name="flink-demo" target="1.8" />
       <module name="flink-order" target="1.8" />
+      <module name="flink-realtime" target="8" />
       <module name="flink-redis" target="1.8" />
       <module name="flink-scala" target="1.8" />
       <module name="flink-spark" target="1.8" />
