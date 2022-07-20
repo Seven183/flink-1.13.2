@@ -1,3 +1,6 @@
+import cc.blynk.clickhouse.BalancedClickhouseDataSource;
+
+import javax.sql.DataSource;
 import java.sql.*;
 
 
@@ -6,11 +9,13 @@ public class QueryClickhouse {
 
     static {
         try {
+            DataSource dualDataSource = new BalancedClickhouseDataSource("jdbc:clickhouse://42.192.48.125:8123,172.19.0.183:8123");
             Class.forName("cc.blynk.clickhouse.ClickHouseDriver");// 驱动包
-            String url = "jdbc:clickhouse://42.192.48.125:8123/default";
+//            String url = "jdbc:clickhouse://42.192.48.125:8123/default";
             String user = "default";
             String password = "123456";
-            connection = DriverManager.getConnection(url,user,password);
+//            connection = DriverManager.getConnection(url,user,password);
+            connection = dualDataSource.getConnection(user,password);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -19,7 +24,7 @@ public class QueryClickhouse {
 
     public static void main(String[] args) throws SQLException {
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select * from default.t_order_mt");
+        ResultSet resultSet = statement.executeQuery("select * from test.ttt");
 //        System.out.println(resultSet.getString(1));
         ResultSetMetaData metaData = resultSet.getMetaData();
 //        System.out.println(resultSet);

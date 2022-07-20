@@ -218,8 +218,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.2</version>
-            <scope>provided</scope>
+            <version>1.18.20</version>
         </dependency>
 
         <dependency>
@@ -232,6 +231,14 @@
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
             <version>6.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.doris</groupId>
+            <artifactId>flink-doris-connector-1.13_2.12</artifactId>
+            <!--artifactId>flink-doris-connector-1.12_2.12</artifactId-->
+            <!--artifactId>flink-doris-connector-1.11_2.12</artifactId-->
+            <version>1.0.3</version>
         </dependency>
     </dependencies>
 
